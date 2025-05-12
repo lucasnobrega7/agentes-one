@@ -723,11 +723,11 @@ formData.append("openAIApiKey[openAIEmbeddings_0]", "sk-my-openai-2nd-key")`
                                     showLineNumbers={false}
                                     wrapLines
                                 />
-                                <CheckboxInput label='Show Override Config' value={checkboxVal} onChange={onCheckBoxChanged} />
+                                <CheckboxInput label='Mostrar Configuração de Substituição' value={checkboxVal} onChange={onCheckBoxChanged} />
                                 {checkboxVal && getConfigApi.data && getConfigApi.data.length > 0 && (
                                     <>
                                         <Typography sx={{ mt: 2 }}>
-                                            You can override existing input configuration of the chatflow with overrideConfig property.
+                                            Você pode substituir a configuração de entrada existente do chatflow com a propriedade overrideConfig.
                                         </Typography>
                                         <div
                                             style={{
@@ -750,17 +750,17 @@ formData.append("openAIApiKey[openAIEmbeddings_0]", "sk-my-openai-2nd-key")`
                                                 <IconExclamationCircle size={30} color='rgb(116,66,16)' />
                                                 <span style={{ color: 'rgb(116,66,16)', marginLeft: 10, fontWeight: 500 }}>
                                                     {
-                                                        'For security reason, override config is disabled by default. You can change this by going into Chatflow Configuration -> Security tab, and enable the property you want to override.'
+                                                        'Por razões de segurança, a substituição de configuração está desabilitada por padrão. Você pode alterar isso acessando a Configuração do Chatflow -> aba Segurança, e habilitar a propriedade que deseja substituir.'
                                                     }
-                                                    &nbsp;Refer{' '}
+                                                    &nbsp;Consulte{' '}
                                                     <a
                                                         rel='noreferrer'
                                                         target='_blank'
                                                         href='https://docs.agentesdeconversao.com.br/using-agentes/api#override-config'
                                                     >
-                                                        here
+                                                        aqui
                                                     </a>{' '}
-                                                    for more details
+                                                    para mais detalhes
                                                 </span>
                                             </div>
                                         </div>
@@ -768,7 +768,7 @@ formData.append("openAIApiKey[openAIEmbeddings_0]", "sk-my-openai-2nd-key")`
                                             <Card sx={{ borderColor: theme.palette.primary[200] + 75, p: 2 }} variant='outlined'>
                                                 <Stack sx={{ mt: 1, mb: 2, ml: 1, alignItems: 'center' }} direction='row' spacing={2}>
                                                     <IconBox />
-                                                    <Typography variant='h4'>Nodes</Typography>
+                                                    <Typography variant='h4'>Nós</Typography>
                                                 </Stack>
                                                 {Object.keys(nodeConfig)
                                                     .sort()
@@ -832,7 +832,7 @@ formData.append("openAIApiKey[openAIEmbeddings_0]", "sk-my-openai-2nd-key")`
                                             <Card sx={{ borderColor: theme.palette.primary[200] + 75, p: 2 }} variant='outlined'>
                                                 <Stack sx={{ mt: 1, mb: 2, ml: 1, alignItems: 'center' }} direction='row' spacing={2}>
                                                     <IconVariable />
-                                                    <Typography variant='h4'>Variables</Typography>
+                                                    <Typography variant='h4'>Variáveis</Typography>
                                                 </Stack>
                                                 <TableViewOnly rows={variableOverrides} columns={['name', 'type', 'enabled']} />
                                             </Card>
@@ -893,11 +893,11 @@ formData.append("openAIApiKey[openAIEmbeddings_0]", "sk-my-openai-2nd-key")`
                                 )}
                                 {getIsChatflowStreamingApi.data?.isStreaming && (
                                     <p>
-                                        Read&nbsp;
+                                        Leia&nbsp;
                                         <a rel='noreferrer' target='_blank' href='https://docs.agentesdeconversao.com.br/using-agentes/streaming'>
-                                            here
+                                            aqui
                                         </a>
-                                        &nbsp;on how to stream response back to application
+                                        &nbsp;sobre como transmitir a resposta de volta para a aplicação
                                     </p>
                                 )}
                             </>

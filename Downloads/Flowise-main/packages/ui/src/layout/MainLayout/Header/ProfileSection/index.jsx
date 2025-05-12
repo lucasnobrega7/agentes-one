@@ -94,7 +94,7 @@ const ExportDialog = ({ show, onCancel, onExport }) => {
             aria-describedby='export-dialog-description'
         >
             <DialogTitle sx={{ fontSize: '1rem' }} id='export-dialog-title'>
-                {!isExporting ? 'Select Data to Export' : 'Exporting..'}
+                {!isExporting ? 'Selecionar Dados para Exportar' : 'Exportando..'}
             </DialogTitle>
             <DialogContent>
                 {!isExporting && (
@@ -133,14 +133,14 @@ const ExportDialog = ({ show, onCancel, onExport }) => {
                                 src={ExportingGIF}
                                 alt='ExportingGIF'
                             />
-                            <span>Exporting data might takes a while</span>
+                            <span>A exportação de dados pode demorar um pouco</span>
                         </div>
                     </Box>
                 )}
             </DialogContent>
             {!isExporting && (
                 <DialogActions>
-                    <Button onClick={onCancel}>Cancel</Button>
+                    <Button onClick={onCancel}>Cancelar</Button>
                     <Button
                         disabled={selectedData.length === 0}
                         variant='contained'
@@ -149,7 +149,7 @@ const ExportDialog = ({ show, onCancel, onExport }) => {
                             onExport(selectedData)
                         }}
                     >
-                        Export
+                        Exportar
                     </Button>
                 </DialogActions>
             )}
@@ -415,7 +415,7 @@ const ProfileSection = ({ username, handleLogout }) => {
                                                     <ListItemIcon>
                                                         <IconFileExport stroke={1.5} size='1.3rem' />
                                                     </ListItemIcon>
-                                                    <ListItemText primary={<Typography variant='body2'>Export</Typography>} />
+                                                    <ListItemText primary={<Typography variant='body2'>Exportar</Typography>} />
                                                 </ListItemButton>
                                                 <ListItemButton
                                                     sx={{ borderRadius: `${customization.borderRadius}px` }}
@@ -426,7 +426,7 @@ const ProfileSection = ({ username, handleLogout }) => {
                                                     <ListItemIcon>
                                                         <IconFileUpload stroke={1.5} size='1.3rem' />
                                                     </ListItemIcon>
-                                                    <ListItemText primary={<Typography variant='body2'>Import</Typography>} />
+                                                    <ListItemText primary={<Typography variant='body2'>Importar</Typography>} />
                                                 </ListItemButton>
                                                 <input ref={inputRef} type='file' hidden onChange={fileChange} accept='.json' />
                                                 <ListItemButton
@@ -449,7 +449,7 @@ const ProfileSection = ({ username, handleLogout }) => {
                                                         <ListItemIcon>
                                                             <IconLogout stroke={1.5} size='1.3rem' />
                                                         </ListItemIcon>
-                                                        <ListItemText primary={<Typography variant='body2'>Logout</Typography>} />
+                                                        <ListItemText primary={<Typography variant='body2'>Sair</Typography>} />
                                                     </ListItemButton>
                                                 )}
                                             </List>
