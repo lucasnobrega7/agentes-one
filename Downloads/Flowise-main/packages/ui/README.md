@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD030 -->
 
-# Flowise UI
+# Agentes de Conversão UI
 
 English | [中文](./README-ZH.md)
 
-React frontend ui for Flowise.
+React frontend ui for Agentes de Conversão.
 
 ![Flowise](https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_agentflow.gif?raw=true)
 
@@ -13,6 +13,10 @@ Install:
 ```bash
 npm i flowise-ui
 ```
+
+## Agentes de Conversão
+
+Agentes de Conversão é uma plataforma para construção de agentes de IA conversacionais de forma visual e intuitiva.
 
 ## License
 
