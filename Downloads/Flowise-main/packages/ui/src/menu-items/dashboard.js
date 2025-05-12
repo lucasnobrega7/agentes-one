@@ -35,7 +35,7 @@ const dashboard = {
     children: [
         {
             id: 'chatflows',
-            title: 'Chatflows',
+            title: 'Fluxos de Chat',
             type: 'item',
             url: '/chatflows',
             icon: icons.IconHierarchy,
@@ -43,7 +43,7 @@ const dashboard = {
         },
         {
             id: 'agentflows',
-            title: 'Agentflows',
+            title: 'Fluxos de Agentes',
             type: 'item',
             url: '/agentflows',
             icon: icons.IconUsersGroup,
@@ -51,7 +51,7 @@ const dashboard = {
         },
         {
             id: 'executions',
-            title: 'Executions',
+            title: 'Execuções',
             type: 'item',
             url: '/executions',
             icon: icons.IconListCheck,
@@ -59,7 +59,7 @@ const dashboard = {
         },
         {
             id: 'assistants',
-            title: 'Assistants',
+            title: 'Assistentes',
             type: 'item',
             url: '/assistants',
             icon: icons.IconRobot,
@@ -67,7 +67,7 @@ const dashboard = {
         },
         {
             id: 'marketplaces',
-            title: 'Marketplaces',
+            title: 'Marketplace',
             type: 'item',
             url: '/marketplaces',
             icon: icons.IconBuildingStore,
@@ -75,7 +75,7 @@ const dashboard = {
         },
         {
             id: 'tools',
-            title: 'Tools',
+            title: 'Ferramentas',
             type: 'item',
             url: '/tools',
             icon: icons.IconTool,
@@ -83,7 +83,7 @@ const dashboard = {
         },
         {
             id: 'credentials',
-            title: 'Credentials',
+            title: 'Credenciais',
             type: 'item',
             url: '/credentials',
             icon: icons.IconLock,
@@ -91,7 +91,7 @@ const dashboard = {
         },
         {
             id: 'variables',
-            title: 'Variables',
+            title: 'Variáveis',
             type: 'item',
             url: '/variables',
             icon: icons.IconVariable,
@@ -99,7 +99,7 @@ const dashboard = {
         },
         {
             id: 'apikey',
-            title: 'API Keys',
+            title: 'Chaves API',
             type: 'item',
             url: '/apikey',
             icon: icons.IconKey,
@@ -107,7 +107,7 @@ const dashboard = {
         },
         {
             id: 'document-stores',
-            title: 'Document Stores',
+            title: 'Armazenamento de Documentos',
             type: 'item',
             url: '/document-stores',
             icon: icons.IconFiles,

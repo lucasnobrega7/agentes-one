@@ -87,8 +87,8 @@ const Chatflows = () => {
         if (getAllChatflowsApi.error) {
             if (getAllChatflowsApi.error?.response?.status === 401) {
                 setLoginDialogProps({
-                    title: 'Login',
-                    confirmButtonName: 'Login'
+                    title: 'Entrar',
+                    confirmButtonName: 'Entrar'
                 })
                 setLoginDialogOpen(true)
             } else {
@@ -134,9 +134,9 @@ const Chatflows = () => {
                     <ViewHeader
                         onSearchChange={onSearchChange}
                         search={true}
-                        searchPlaceholder='Search Name or Category'
-                        title='Chatflows'
-                        description='Build single-agent systems, chatbots and simple LLM flows'
+                        searchPlaceholder='Pesquisar Nome ou Categoria'
+                        title='Fluxos de Chat'
+                        description='Construa sistemas de agente único, chatbots e fluxos simples de LLM'
                     >
                         <ToggleButtonGroup
                             sx={{ borderRadius: 2, maxHeight: 40 }}
@@ -153,7 +153,7 @@ const Chatflows = () => {
                                 }}
                                 variant='contained'
                                 value='card'
-                                title='Card View'
+                                title='Visualização em Cards'
                             >
                                 <IconLayoutGrid />
                             </ToggleButton>
@@ -165,13 +165,13 @@ const Chatflows = () => {
                                 }}
                                 variant='contained'
                                 value='list'
-                                title='List View'
+                                title='Visualização em Lista'
                             >
                                 <IconList />
                             </ToggleButton>
                         </ToggleButtonGroup>
                         <StyledButton variant='contained' onClick={addNew} startIcon={<IconPlus />} sx={{ borderRadius: 2, height: 40 }}>
-                            Add New
+                            Adicionar Novo
                         </StyledButton>
                     </ViewHeader>
                     {!view || view === 'card' ? (
@@ -209,7 +209,7 @@ const Chatflows = () => {
                                     alt='WorkflowEmptySVG'
                                 />
                             </Box>
-                            <div>No Chatflows Yet</div>
+                            <div>Nenhum Fluxo de Chat Ainda</div>
                         </Stack>
                     )}
                 </Stack>
