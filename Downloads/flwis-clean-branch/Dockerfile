@@ -17,23 +17,19 @@ ENV NODE_OPTIONS=--max-old-space-size=8192
 # Set working directory
 WORKDIR /app
 
-# Debug - show working directory
-RUN pwd && ls -la
+# Copy package files first for better layer caching
+COPY app-root/package.json ./
+COPY app-root/pnpm-lock.yaml ./
+COPY app-root/pnpm-workspace.yaml ./
+COPY app-root/turbo.json ./
 
-# Copy entire project
-COPY . .
-
-# Debug - show files after copy
-RUN pwd && ls -la
-
-# Navigate to Flowise-main directory and install packages
-WORKDIR /app/Flowise-main
-
-# Debug - show files in Flowise-main
-RUN pwd && ls -la
-
-# Install dependencies and build
+# Install dependencies
 RUN pnpm install
+
+# Copy the rest of the app
+COPY app-root ./
+
+# Build the app
 RUN pnpm build
 
 EXPOSE 3000
