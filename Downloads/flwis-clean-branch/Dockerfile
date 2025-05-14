@@ -1,17 +1,15 @@
 FROM node:20-alpine
+
+# Install necessary packages
 RUN apk add --update libc6-compat python3 make g++
-# needed for pdfjs-dist
 RUN apk add --no-cache build-base cairo-dev pango-dev
-
-# Install Chromium
 RUN apk add --no-cache chromium
-
-# Install curl for container-level health checks
 RUN apk add --no-cache curl
 
 # Install PNPM globally
 RUN npm install -g pnpm
 
+# Environment variables
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 ENV NODE_OPTIONS=--max-old-space-size=8192
@@ -19,11 +17,20 @@ ENV NODE_OPTIONS=--max-old-space-size=8192
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and related files first for better layer caching
-COPY Flowise-main/package.json Flowise-main/pnpm-lock.yaml Flowise-main/pnpm-workspace.yaml Flowise-main/turbo.json ./
+# Debug - show working directory
+RUN pwd && ls -la
 
-# Copy the rest of the application
-COPY Flowise-main/ ./
+# Copy entire project
+COPY . .
+
+# Debug - show files after copy
+RUN pwd && ls -la
+
+# Navigate to Flowise-main directory and install packages
+WORKDIR /app/Flowise-main
+
+# Debug - show files in Flowise-main
+RUN pwd && ls -la
 
 # Install dependencies and build
 RUN pnpm install
