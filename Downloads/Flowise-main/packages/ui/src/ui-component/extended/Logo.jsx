@@ -1,5 +1,5 @@
-import logo from '@/assets/images/flowise_white.svg' // Renamed to agentes_de_conversao_white.svg
-import logoDark from '@/assets/images/flowise_dark.svg' // Renamed to agentes_de_conversao_dark.svg
+import logo from '@/assets/images/agentes_de_conversao_white.svg'
+import logoDark from '@/assets/images/agentes_de_conversao_dark.svg'
 
 import { useSelector } from 'react-redux'
 

@@ -4,6 +4,12 @@
 // third-party
 @import 'react-perfect-scrollbar/dist/css/styles.css';
 
+// Fonts
+@import 'sohne-font.scss';
+
+// Global styles
+@import 'global.scss';
+
 // ==============================|| LIGHT BOX ||============================== //
 .fullscreen .react-images__blanket {
     z-index: 1200;

@@ -58,26 +58,26 @@ $transparent: #ffffff00;
 // ==============================|| DARK THEME VARIANTS ||============================== //
 
 // paper & background
-$darkBackground: #191b1f;
-$darkPaper: #191b1f;
+$darkBackground: #0e0e10; // bg overall
+$darkPaper: #0e0e10; // bg overall
 
 // dark 800 & 900
-$darkLevel1: #252525; // level 1
-$darkLevel2: #242424; // level 2
+$darkLevel1: #1a1a1d; // cards
+$darkLevel2: #1a1a1d; // cards
 
 // primary dark
-$darkPrimaryLight: #23262c;
-$darkPrimaryMain: #23262c;
-$darkPrimaryDark: #191b1f;
+$darkPrimaryLight: #0e0e10; // bg overall
+$darkPrimaryMain: #0e0e10; // bg overall
+$darkPrimaryDark: #0e0e10; // bg overall
 $darkPrimary200: #c9d4e9;
-$darkPrimary800: #32353b;
+$darkPrimary800: #1a1a1d; // cards
 
 // secondary dark
-$darkSecondaryLight: #454c59;
-$darkSecondaryMain: #7c4dff;
-$darkSecondaryDark: #ffffff;
-$darkSecondary200: #32353b;
-$darkSecondary800: #6200ea;
+$darkSecondaryLight: #46B2E0; // accent gradient start
+$darkSecondaryMain: #8A53D2; // accent gradient mid
+$darkSecondaryDark: #E056A0; // accent gradient end
+$darkSecondary200: #27272a; // borda sutil
+$darkSecondary800: #8A53D2; // accent gradient mid
 
 // text variants
 $darkTextTitle: #d7dcec;

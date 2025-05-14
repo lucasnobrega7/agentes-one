@@ -3,7 +3,7 @@ const config = {
     basename: '',
     defaultPath: '/chatflows',
     // You can specify multiple fallback fonts
-    fontFamily: `'Inter', 'Roboto', 'Arial', sans-serif`,
+    fontFamily: `'Söhne', 'Söhne Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif`,
     borderRadius: 12
 }
 
